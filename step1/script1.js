@@ -1,3 +1,17 @@
+var origBoard;
+var currentPlayer = 1;
+
+function take_turn(clicked_id) {
+  // get the id that was clicked on
+  var current = document.getElementById(clicked_id).innerHTML;
+  alert(clicked_id)
+  if (current == "O") {
+     return;
+  }
+  document.getElementById("topleft").innerHTML = "X"
+}
+
+
 function checkIfXWonTopRow() {
   var curtopleft = document.getElementById("topleft").innerHTML;
   var curtopmid = document.getElementById("topmid").innerHTML;

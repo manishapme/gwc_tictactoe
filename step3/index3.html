@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Play Tic Tac Toe</title>
+		<link rel="stylesheet" href="style3.css">
+		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<h1>Let's Play Tic Tac Toe</h1>
+		<h2>Connect three to win!</h2>
+		<div id="winner">
+		</div>
+		<div id="board">
+			<table>
+				<tr>
+					<td id="1" onClick="take_turn(this.id)">-</td>
+					<td id="2" onClick="take_turn(this.id)">-</td>
+					<td id="3" onClick="take_turn(this.id)">-</td>
+				</tr>
+				<tr>
+					<td id="4" onClick="take_turn(this.id)">-</td>
+					<td id="5" onClick="take_turn(this.id)">-</td>
+					<td id="6" onClick="take_turn(this.id)">-</td>
+				</tr>
+				<tr>
+					<td id="7" onClick="take_turn(this.id)">-</td>
+					<td id="8" onClick="take_turn(this.id)">-</td>
+					<td id="9" onClick="take_turn(this.id)">-</td>
+				</tr>
+			</table>
+		</div>
+		<script src="script3.js"></script>
+	</body>
+</html>
+
+<!--
+	Instructions for completing.
+	1. Save your old work with a new file name so you can see all the different steps you learned. 
+	2. Move css to new file called style.css
+	3. Move javascript code to new file called script.js
+	4. This leaves one <script src="script.js"></script> statement above the </body> tag
+	5. Create a div with id="winner" above the <table>
+	6. Wrap table and it's contents in <div id="board"></div>
+
+	7. Add a variable to the top of the script file
+			var currentPlayer = 1;
+	8. Add an new id and function to the cells of the table
+			onClick="take_turn(this.id)"
+	9. Convert the button functions into just one function
+			Create a new function called take_turn(clicked_id)
+			You can copy one of your existing functions to start
+			Have it use alert(clicked_id) to show that it is unique on each cell of your table
+	10. Change the take_turn(clicked_id) to return X or O depending on which player is playing
+	   and what was selected before
+	11. This one function can now replace all your button functions
+
+	12. Remove the extra code for the buttons we aren't using anymore
+	13. Change the id's on your table cells to numbers
+	14. Add another global variable at top of script file var gameOver = false;
+	15. Add gameOver == true to the conditional in the function take_turn()
+	16. Create 2 new functions
+		  update_winner_div()
+		  is_winner_row_1()
+	17. After you confirm functions work, and functions for other 7 ways to win
+		  is_winner_row_2()
+		  is_winner_row_3()
+		  is_winner_col_1()
+		  is_winner_col_2()
+		  is_winner_col_3()
+		  is_winner_diagnol_1()
+		  is_winner_diagnol_2()
+
+-->

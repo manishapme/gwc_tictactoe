@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Play Tic Tac Toe</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style2.css">
 		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 	</head>
 	<body bgcolor=#000012>
@@ -13,19 +13,19 @@
 		<div id="board">
 			<table>
 				<tr>
-					<td id="topleft">-</td>
-					<td id="topmid">-</td>
-					<td id="topright">-</td>
+					<td id="topleft" onClick="take_turn(this.id)">-</td>
+					<td id="topmid" onClick="take_turn(this.id)">-</td>
+					<td id="topright" onClick="take_turn(this.id)">-</td>
 				</tr>
 				<tr>
-					<td id="midleft">-</td>
-					<td id="middle">-</td>
-					<td id="midright">-</td>
+					<td id="midleft" onClick="take_turn(this.id)">-</td>
+					<td id="middle" onClick="take_turn(this.id)">-</td>
+					<td id="midright" onClick="take_turn(this.id)">-</td>
 				</tr>
 				<tr>
-					<td id="botleft">-</td>
-					<td id="botmid">-</td>
-					<td id="botright">-</td>
+					<td id="botleft" onClick="take_turn(this.id)">-</td>
+					<td id="botmid" onClick="take_turn(this.id)">-</td>
+					<td id="botright" onClick="take_turn(this.id)">-</td>
 				</tr>
 			</table>
 		</div>
@@ -47,16 +47,28 @@
 	  <button8o onClick="bm_to0()">_Bottom Middle to O</button8o></p>
 	  <p><button9x onClick="br_toX()">Bottom Right to X_</button9x>
 	  <button9o onClick="br_to0()">_Bottom Right to O</button9o></p>
-		<script src="script.js"></script>
+		<script src="script2.js"></script>
 	</body>
 </html>
 
 <!--
-	Instructions for completing. 
+	Instructions for completing.
 	1. Save your old work with a new file name so you can see all the different steps you learned. 
 	2. Move css to new file called style.css
 	3. Move javascript code to new file called script.js
 	4. This leaves one <script src="script.js"></script> statement above the </body> tag
 	5. Create a div with id="winner" above the <table>
 	6. Wrap table and it's contents in <div id="board"></div>
+
+	7. Add a variable to the top of the script file
+			var currentPlayer = 1;
+	8. Add an new id and function to the cells of the table
+			onClick="take_turn(this.id)"
+	9. Convert the button functions into just one function
+			Create a new function called take_turn(clicked_id)
+			You can copy one of your existing functions to start
+			Have it use alert(clicked_id) to show that it is unique on each cell of your table
+	10. Change the take_turn(clicked_id) to return X or O depending on which player is playing
+	   and what was selected before
+	11. This one function can now replace all your button functions
 -->

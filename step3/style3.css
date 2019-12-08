@@ -1,0 +1,47 @@
+body {
+  background-color: #470A60;
+}
+h1 {
+  color:#cc1001;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 36px;
+  text-align: center;
+}
+h2 {
+  color:#eeeeee;
+  font-family: 'Permanent Marker', cursive;
+  font-size:24px;
+  text-align: center;
+}
+p  {
+  color:#cc1001;
+  font-family: 'Permanent Marker', cursive;
+  font-size:11px;
+  text-align: center;
+}
+table {
+  color:#eeeeee;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+  text-align: center;
+  border-color: #eeeeee;
+  border-style: solid;
+  width: 100%;
+}
+td {
+  width: 33%;
+  border-style: dotted;
+  border-color: #cc1001;
+}
+tr {
+  height: 50px;
+  border-style: dotted;
+  border-color: #cc1001;
+}
+#winner {
+  width: 100%;
+  color: yellow;
+  font-size:24px;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+}
